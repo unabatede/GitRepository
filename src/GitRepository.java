@@ -18,7 +18,9 @@ public class GitRepository {
             repositoryName = (args[0].indexOf(".git") == -1) ? args[0] + ".git" : args[0];
 
             System.out.println("Creating new repository: " + repositoryName);
-            GitRepository gitRepository = new GitRepository(repositoryName);
+
+            // now create the repository!
+            new GitRepository(repositoryName);
         } else {
             System.err.println("Wrong number of arguments: Please provide a repository name!");
         }
