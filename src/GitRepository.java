@@ -12,7 +12,7 @@ public class GitRepository {
     private String repositoryDirectory;
 
     public static void main(String[] args) {
-        if (args[0] == null) {
+        if (args[0] != null) {
             String repositoryName;
             // if the provided repository name doesn't yet include the ending '.git', add it now
             repositoryName = (args[0].indexOf(".git") == -1) ? args[0] + ".git" : args[0];
